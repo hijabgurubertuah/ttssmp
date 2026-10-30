@@ -1,0 +1,8 @@
+{
+  "name": "TTS SMPN 1 BENGKALIS",
+  "description": "Generator teka-teki silang otomatis yang dapat diekspor ke gambar PNG dan dicetak ke PDF untuk lembar kerja siswa.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
