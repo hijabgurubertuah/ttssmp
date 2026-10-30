@@ -1,0 +1,5 @@
+# robots.txt for tts.smpn1bengkalis.sch.id
+User-agent: *
+Allow: /
+
+Sitemap: https://tts.smpn1bengkalis.sch.id/sitemap.xml
