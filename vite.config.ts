@@ -11,14 +11,14 @@ export default defineConfig(() => {
       tailwindcss(),
       VitePWA({
         registerType: 'autoUpdate',
-        includeAssets: ['favicon.ico', 'apple-touch-icon.png', 'icon.svg', 'banner-mgmp.png'],
+        includeAssets: ['favicon.ico', 'apple-touch-icon.png', 'icon.svg', 'banner-smpn1.png', 'banner-mgmp.png'],
         manifest: {
           id: '/',
           name: 'BUAT TTS SEMUA MATA PELAJARAN',
           short_name: 'TTS Maker',
-          description: 'Generator Teka-Teki Silang Otomatis Karya MGMP IPA Kec. Bengkalis Riau',
-          theme_color: '#0d9488',
-          background_color: '#e6f5f3',
+          description: 'Generator Teka-Teki Silang Otomatis Karya SMP Negeri 1 Bengkalis',
+          theme_color: '#3730a3',
+          background_color: '#eef2ff',
           display: 'standalone',
           start_url: '/',
           scope: '/',
@@ -44,6 +44,7 @@ export default defineConfig(() => {
           ],
         },
         workbox: {
+          maximumFileSizeToCacheInBytes: 5 * 1024 * 1024,
           globPatterns: ['**/*.{js,css,html,ico,png,svg,woff,woff2}'],
           runtimeCaching: [
             {
@@ -70,7 +71,7 @@ export default defineConfig(() => {
     ],
     resolve: {
       alias: {
-        '@': path.resolve(__dirname, '.'),
+        '@': path.resolve(import.meta.dirname, '.'),
       },
     },
     server: {

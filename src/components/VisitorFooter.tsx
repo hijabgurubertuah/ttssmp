@@ -36,23 +36,23 @@ export const VisitorFooter: React.FC = () => {
         <div className="flex items-center justify-center gap-4 sm:gap-6 text-xs sm:text-sm font-bold text-white drop-shadow-2xs">
           {/* Total Visitors */}
           <div className="flex items-center gap-1.5" title="Total Pengunjung">
-            <Users className="w-4 h-4 text-teal-100 shrink-0" />
+            <Users className="w-4 h-4 text-indigo-100 shrink-0" />
             <span className="font-mono">
               {isLoading ? '...' : totalVisitors.toLocaleString('id-ID')}
             </span>
           </div>
 
-          <span className="text-teal-200/50 font-normal">|</span>
+          <span className="text-indigo-200/50 font-normal">|</span>
 
           {/* Today Visitors */}
           <div className="flex items-center gap-1.5" title="Pengunjung Hari Ini">
-            <UserCheck className="w-4 h-4 text-teal-100 shrink-0" />
+            <UserCheck className="w-4 h-4 text-indigo-100 shrink-0" />
             <span className="font-mono">
               {isLoading ? '...' : todayVisitors.toLocaleString('id-ID')}
             </span>
           </div>
 
-          <span className="text-teal-200/50 font-normal">|</span>
+          <span className="text-indigo-200/50 font-normal">|</span>
 
           {/* Online Count with Blinking Green Dot */}
           <div className="flex items-center gap-1.5" title="Sedang Online">

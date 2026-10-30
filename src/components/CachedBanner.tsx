@@ -2,9 +2,9 @@ import React, { useEffect, useState } from 'react';
 
 const DB_NAME = 'mgmp_tts_offline_assets';
 const STORE_NAME = 'banners';
-const BANNER_KEY = 'top_banner_cover';
-const LOCAL_URL = '/banner-mgmp.png';
-const REMOTE_URL = 'https://i.ibb.co.com/prynFRkH/1000353298.png';
+const BANNER_KEY = 'top_banner_cover_smpn1';
+const LOCAL_URL = '/banner-smpn1.png';
+const REMOTE_URL = 'https://i.ibb.co.com/n87c00vB/tts-smpn-1-bengkalis-1-2.png';
 
 // Buka / Inisialisasi IndexedDB
 function openBannerDB(): Promise<IDBDatabase> {
@@ -151,7 +151,7 @@ export const CachedBanner: React.FC = () => {
   return (
     <img
       src={src}
-      alt="Banner MGMP IPA Bengkalis"
+      alt="Banner SMP Negeri 1 Bengkalis"
       className="w-full h-auto block object-cover max-h-48 mx-auto"
       loading="eager"
       decoding="sync"
